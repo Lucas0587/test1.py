@@ -1,0 +1,7 @@
+lundi
+	n.f.周一
+	mardi
+jour
+	n.m.天，日
+après-midi
+	n.m.下午

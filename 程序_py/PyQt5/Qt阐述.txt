@@ -1,0 +1,24 @@
+----Lesson 1----
+1、导入：
+    import sys
+    from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton,QLabel
+2、初始化设置：
+    | app = QApplication(sys.argv)
+    | sys.exit(app.exec_())
+3、设置窗口：
+    (1). win=QMainWindow()
+    (2). win=QWidget()
+4、窗口属性
+    (1). 设置窗口大小：
+         win.setGeometry(x, y, width, height)
+            等价于：win.resize(width, height)       win.move(x,y)
+    (2). 设置窗口标题：
+        标题：win.setWindowTitle("Text")
+        图标：
+    (3).
+5、.ui文件转化成.py文件
+    方法一：python -m PyQt5.uic.pyuic demo.ui -o demo.py
+        此方法新建了一个demo.py文件
+    方法二：E:\python\Scripts\pyuic5 demo.ui -o demo.py
+        此方法在C:\Users\HP下新建了一个demo.py文件
+    方法三：
