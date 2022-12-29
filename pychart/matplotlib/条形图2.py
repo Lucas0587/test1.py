@@ -13,12 +13,14 @@ for i in range(N):
     Chinese.append(random.randint(89,97))
     Math.append(random.randint(89,97))
     name.append("G"+str(i+1))
-p1=ax.bar(xlabel+width/2,Chinese,width,color="#ff11ff")
-p2=ax.bar(xlabel-width/2,Math,width,color="#11ff11")
+p1=ax.bar(xlabel-width/2,Chinese,width,color="#ff11ff",label="Chinese",tick_label=name)
+p2=ax.bar(xlabel+width/2,Math,width,color="#11ff11",label="Math")
 
 ax.bar_label(p1,padding=3)
 ax.bar_label(p2,padding=3)
-#Axes.bar_label(container, labels=None, *, fmt='%g', label_type='edge'(default)/'center', padding=0, **kwargs)
+#ax.set_xticks(xlabel,name)
+ax.legend()
 
+fig.tight_layout(pad=3)
 
 plt.show()
